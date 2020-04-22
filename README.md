@@ -70,15 +70,15 @@ ansible-playbook main.yaml --extra-vars "command=delete kops_state_store=s3://<N
 ```
 
 Github Links:
-[Infrastructure](https://github.com/Ashutosh-Shukla/finalproj-infra)
-[Frontend](https://github.com/Ashutosh-Shukla/finalproj-frontend)
-[Backend-Customer](https://github.com/Ashutosh-Shukla/finalproj-vendor)
-[Backend-Vendor](https://github.com/Ashutosh-Shukla/finalproj-customer)
+- [Infrastructure](https://github.com/Ashutosh-Shukla/finalproj-infra)
+- [Frontend](https://github.com/Ashutosh-Shukla/finalproj-frontend)
+- [Backend-Customer](https://github.com/Ashutosh-Shukla/finalproj-vendor)
+- [Backend-Vendor](https://github.com/Ashutosh-Shukla/finalproj-customer)
 
 Docker Images:
-ashutoshshukla/finalproj-frontend:v1
-ashutoshshukla/finalproj-customer:v1
-ashutoshshukla/finalproj-vendor:v1
-mysql:5.6
+- ashutoshshukla/finalproj-frontend:v1
+- ashutoshshukla/finalproj-customer:v1
+- ashutoshshukla/finalproj-vendor:v1
+- mysql:5.6
 
 
