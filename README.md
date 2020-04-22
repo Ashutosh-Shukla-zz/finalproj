@@ -28,17 +28,17 @@ To deploy the kubernetes cluster checkout the git repo https://github.com/Ashuto
 In your aws Route 53 create a private hosted zone and note down the ID
 In your S3 create a bucket to store state of the kops cluster.
 
-![Clone Repo](https://ibb.co/zHcwvwr)
+![Clone Repo](https://i.ibb.co/prDpFpx/Screenshot-from-2020-04-22-11-07-55.png)
 
 Run the following command to provision the cluster.
 
 ```sh
 ansible-playbook main.yaml --extra-vars "command=start kops_state_store=s3://<Name of state store bucker> cluster_name=cluster.<domain name> dns_zone_id=<PrivateHostedZoneID> ssh_path=<Public Key path>"
 ```
-![Create the Cluster](https://ibb.co/F5szQj2)
+![Create the Cluster](https://i.ibb.co/zX8Z30p/Screenshot-from-2020-04-22-11-08-11.png)
 
 
-![Create the Cluster](https://ibb.co/q1qQbWP)
+![Create the Cluster](https://i.ibb.co/f06wmnP/Screenshot-from-2020-04-22-11-08-30.png)
 
 Once the cluster is created check the cluster health with 
 
@@ -55,15 +55,15 @@ Run the deployment.sh script inside the finalproj-deployment directory inside in
 ```sh
 ./finalproj-deployment/deployment.sh
 ```
-![Create the Applications deployment](https://ibb.co/VBVTVG6)
+![Create the Applications deployment](https://i.ibb.co/Qm9M9V0/Screenshot-from-2020-04-22-11-08-40.png)
 
 To start the frontend run  the command and copy the external IP
 ```sh
 kubectl get svc -n frontend
 ```
-![Get the frontend URL](https://ibb.co/qd2HRm6)
+![Get the frontend URL](https://i.ibb.co/mGPnHhp/Screenshot-from-2020-04-22-11-09-14.png)
 
-![Get the frontend URL](https://ibb.co/GWdK1bP)
+![Get the frontend URL](https://i.ibb.co/0CngWdJ/Screenshot-from-2020-04-22-11-15-29.png)
 
 
 
@@ -72,7 +72,7 @@ To open grafana cluster port forward the pod name to a local port by a similar c
 ```sh
 kubectl port-forward <Grafana-Pod_name> 3000 -n grafana
 ```
-![Start Grafna on localhost:3000](https://ibb.co/3YVdNwh)
+![Start Grafna on localhost:3000](https://i.ibb.co/cXR3FPT/Screenshot-from-2020-04-22-11-13-50.png)
 
 ## Delete Cluster:
 
