@@ -30,6 +30,16 @@ In your S3 create a bucket to store state of the kops cluster.
 
 ![Clone Repo](https://i.ibb.co/prDpFpx/Screenshot-from-2020-04-22-11-07-55.png)
 
+
+### PreReq tools that you need
+
+1. `aws-cli`
+2. `kops`
+3. `ansible`
+4. `helm3`
+
+Ansible dependencies needed eg., kubectl, oc, boto, etc. to install do `pip install <dependecy>`. 
+
 Run the following command to provision the cluster.
 
 ```sh
