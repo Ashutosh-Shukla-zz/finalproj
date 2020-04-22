@@ -74,6 +74,7 @@ kubectl port-forward <Grafana-Pod_name> 3000 -n grafana
 ```
 ![Start Grafna on localhost:3000](https://i.ibb.co/cXR3FPT/Screenshot-from-2020-04-22-11-13-50.png)
 
+![Start Grafna on localhost:3000](https://i.ibb.co/SBtRv6V/Screenshot-from-2020-04-22-11-20-26.png)
 ## Delete Cluster:
 
 To delete the cluster run the delete kops cluster command
