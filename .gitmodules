@@ -1,0 +1,12 @@
+[submodule "finalproj-infra"]
+	path = finalproj-infra
+	url = https://github.com/Ashutosh-Shukla/finalproj-infra
+[submodule "finalproj-frontend"]
+	path = finalproj-frontend
+	url = https://github.com/Ashutosh-Shukla/finalproj-frontend
+[submodule "finalproj-customer"]
+	path = finalproj-customer
+	url = https://github.com/Ashutosh-Shukla/finalproj-customer
+[submodule "finalproj-vendor"]
+	path = finalproj-vendor
+	url = https://github.com/Ashutosh-Shukla/finalproj-vendor
