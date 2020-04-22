@@ -28,11 +28,17 @@ To deploy the kubernetes cluster checkout the git repo https://github.com/Ashuto
 In your aws Route 53 create a private hosted zone and note down the ID
 In your S3 create a bucket to store state of the kops cluster.
 
+![Clone Repo](https://ibb.co/zHcwvwr)
+
 Run the following command to provision the cluster.
 
 ```sh
 ansible-playbook main.yaml --extra-vars "command=start kops_state_store=s3://<Name of state store bucker> cluster_name=cluster.<domain name> dns_zone_id=<PrivateHostedZoneID> ssh_path=<Public Key path>"
 ```
+![Create the Cluster](https://ibb.co/F5szQj2)
+
+
+![Create the Cluster](https://ibb.co/q1qQbWP)
 
 Once the cluster is created check the cluster health with 
 
@@ -49,17 +55,24 @@ Run the deployment.sh script inside the finalproj-deployment directory inside in
 ```sh
 ./finalproj-deployment/deployment.sh
 ```
+![Create the Applications deployment](https://ibb.co/VBVTVG6)
 
 To start the frontend run  the command and copy the external IP
 ```sh
 kubectl get svc -n frontend
 ```
+![Get the frontend URL](https://ibb.co/qd2HRm6)
+
+![Get the frontend URL](https://ibb.co/GWdK1bP)
+
+
 
 To open grafana cluster port forward the pod name to a local port by a similar command
 
 ```sh
 kubectl port-forward <Grafana-Pod_name> 3000 -n grafana
 ```
+![Start Grafna on localhost:3000](https://ibb.co/3YVdNwh)
 
 ## Delete Cluster:
 
